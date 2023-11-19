@@ -9,138 +9,169 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
             rel="stylesheet"
         />
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="style.css" />
     </head>
     <body>
-        <header><h1>РЕЗЮМЕ</h1></header>
         <main>
-            <section class="about">
-                <h2>Обо мне</h2>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Omnis eligendi doloribus temporibus sit maxime, porro sunt
-                    similique veniam repellat possimus?
-                </p>
-            </section>
-            <section class="education">
-                <h2>Образование</h2>
-                <ul class="education__list">
-                    <li><strong>МПГУ</strong> 2021 -</li>
-                    <li></li>
-                </ul>
-            </section>
-            <section class="skills">
-                <h2>Навыки</h2>
-                <ul class="skills__list">
-                    <li class="skill">
-                        <span
-                            ><img
-                                class="icon"
-                                src="https://cdn-icons-png.flaticon.com/512/1051/1051277.png"
-                                alt="html icon" /></span
-                        >html
-                    </li>
-                    <li class="skill">
-                        <span
-                            ><img
-                                class="icon"
-                                src="   https://cdn-icons-png.flaticon.com/512/732/732190.png"
-                                alt="css icon" /></span
-                        >css
-                    </li>
-                    <li class="skill">
-                        <span
-                            ><img
-                                class="icon"
-                                src="   https://cdn-icons-png.flaticon.com/512/5968/5968292.png"
-                                alt="js icon" /></span
-                        >js
-                    </li>
-                    <li class="skill">
-                        <span
-                            ><img
-                                class="icon"
-                                src="   https://cdn-icons-png.flaticon.com/512/11518/11518876.png"
-                                alt="git icon" /></span
-                        >git
-                    </li>
-                    <li class="skill"></li>
-                </ul>
-            </section>
+            <div class="col1">
+                <div>
+                    <div class="personal-info">
+                        <h1 class="name">Илья Шулепов</h1>
+                        <h2 class="status">Начинающий разработчик</h2>
+                        <p class="description">
+                            Изучаю веб-технологии, создаю функциональный и
+                            доступный продукт.
+                        </p>
+                    </div>
+                    <div class="anchor-links">
+                        <ul class="anchor-links">
+                            <li class="anchor-link">
+                                <a href="#about">ОБО МНЕ</a>
+                            </li>
+                            <li class="anchor-link">
+                                <a href="#experience">ОПЫТ</a>
+                            </li>
+                            <li class="anchor-link">
+                                <a href="#projects">ПРОЕКТЫ</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="socials">
+                    <ul>
+                        <li>vk</li>
+                        <li>email</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col2">
+                <div class="about" id="about">
+                    <p>
+                        Приветствую! Я - начинающий веб-разработчик, готовый к
+                        постоянному росту и развитию в этой области. Мои корни
+                        уходят в мир <span class="cyan">HTML</span>,
+                        <span class="cyan">CSS</span> и
+                        <span class="cyan">JavaScript</span>, но моя история -
+                        это история постоянного обучения и стремления к
+                        разностороннему развитию.
+                    </p>
+                    <p>
+                        Создание веб-продуктов, которые не только функциональны,
+                        но и эффективны, всегда было моей целью. Я не только
+                        ценю дизайн и пользовательский опыт, но и горжусь своей
+                        способностью быстро адаптироваться к новым технологиям.
+                        Открытость к изучению новых инструментов и фреймворков -
+                        это часть моего
+                        <span class="cyan">профессионального подхода</span>.
+                    </p>
+                    <p>
+                        Мой опыт и страсть к веб-разработке продолжают расти, и
+                        я убежден, что внимание к деталям и стремление к
+                        совершенству делают разницу. Для меня важно создавать
+                        продукты, которые оправдывают доверие пользователей и
+                        делают интернет-пространство лучше. Добро пожаловать в
+                        мой мир, где
+                        <span class="cyan">код - это искусство</span>, а
+                        возможности бесконечны.
+                    </p>
+                </div>
+                <div class="experience" id="experience">
+                    <ol class="experience">
+                        <li class="experience__item">
+                            <div class="experience__time">2021 - PRESENT</div>
+                            <div class="experience__body">
+                                <h3 class="experience__name">МПГУ</h3>
+                                <p class="experience__description">
+                                    МПГУ текст Lorem ipsum dolor sit amet
+                                    consectetur adipisicing elit. Reiciendis
+                                    sint impedit quisquam dolore vel veniam
+                                    labore facilis, iure sapiente cupiditate,
+                                    commodi veritatis est similique. Suscipit
+                                    praesentium sint placeat voluptatum minus.
+                                </p>
+                                <div class="experience__skills">
+                                    <ul class="experience__skills">
+                                        <li class="experience__skill cyan">
+                                            Java
+                                        </li>
+                                        <li class="experience__skill cyan">
+                                            Blender
+                                        </li>
+                                        <li class="experience__skill cyan">
+                                            Python
+                                        </li>
+                                        <li class="experience__skill cyan">
+                                            DSA
+                                        </li>
+                                        <li class="experience__skill cyan">
+                                            MySQL
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="experience__item">
+                            <div class="experience__time">2021 - PRESENT</div>
+                            <div class="experience__body">
+                                <h3 class="experience__name">
+                                    Свободное время
+                                </h3>
+                                <p class="experience__description">
+                                    Свободное время текст Lorem ipsum dolor sit
+                                    amet consectetur adipisicing elit. Omnis
+                                    soluta quaerat veniam alias quo dolore
+                                    dignissimos, nulla id nemo quis blanditiis
+                                    doloremque, illo asperiores commodi expedita
+                                    architecto sit recusandae voluptas.
+                                </p>
+                                <div class="experience__skills">
+                                    <ul class="experience__skills">
+                                        <li class="experience__skill cyan">
+                                            HTML
+                                        </li>
+                                        <li class="experience__skill cyan">
+                                            CSS
+                                        </li>
+                                        <li class="experience__skill cyan">
+                                            JS
+                                        </li>
+                                        <li class="experience__skill cyan">
+                                            Git
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+                <div class="projects" id="projects">
+                    <ul class="projects">
+                        <li class="project">
+                            <div class="project__thumbnail">
+                                <a href="index.html"
+                                    ><img
+                                        src="./images/thumbnail.png"
+                                        alt=""
+                                        class="project__thumbnail"
+                                /></a>
+                            </div>
+                            <div class="project__body">
+                                <h3 class="project__name">CV (Портфолио)</h3>
+                                <p class="project__description">
+                                    Описание работы Lorem ipsum dolor sit amet
+                                    consectetur adipisicing elit. Odit assumenda
+                                    vitae cumque quam, atque laborum.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </main>
-        <style>
-            body {
-                font-family: "Ubuntu", sans-serif;
-                background-image: linear-gradient(to right, #ffd194, #d1913c);
-
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
-
-            main {
-                display: flex;
-                flex-direction: column;
-                gap: 3rem;
-            }
-
-            h1,
-            h2,
-            p {
-                color: #fff;
-            }
-            h1 {
-                font-size: 4rem;
-            }
-
-            section {
-                max-width: 75ch;
-                text-align: center;
-                font-size: clamp(0.85rem, 3vw, 1.15rem);
-            }
-
-            ul {
-                text-align: left;
-                color: white;
-            }
-
-            li {
-                padding: 0;
-            }
-
-            .education__list > * + * {
-                margin-top: 1rem;
-            }
-            ul > * {
-                padding-left: 1rem;
-            }
-            .education__list > *::marker {
-                content: "\01F308";
-            }
-            .education__list {
-                list-style-type: georgian;
-            }
-
-            .skills {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
-            .skills__list {
-                list-style-type: none;
-                padding: 0;
-
-                display: flex;
-                gap: 3vw;
-            }
-
-            img.icon {
-                max-width: 20px;
-                vertical-align: bottom;
-                margin-right: 1rem;
-            }
-        </style>
     </body>
 </html>
