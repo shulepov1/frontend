@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>LAB 1</title>
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <header><h1>РЕЗЮМЕ</h1></header>
+        <main>
+            <section class="about">
+                <h2>Обо мне</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Omnis eligendi doloribus temporibus sit maxime, porro sunt
+                    similique veniam repellat possimus?
+                </p>
+            </section>
+            <section class="education">
+                <h2>Образование</h2>
+                <ul class="education__list">
+                    <li><strong>МПГУ</strong> 2021 -</li>
+                    <li></li>
+                </ul>
+            </section>
+            <section class="skills">
+                <h2>Навыки</h2>
+                <ul class="skills__list">
+                    <li class="skill">
+                        <span
+                            ><img
+                                class="icon"
+                                src="https://cdn-icons-png.flaticon.com/512/1051/1051277.png"
+                                alt="html icon" /></span
+                        >html
+                    </li>
+                    <li class="skill">
+                        <span
+                            ><img
+                                class="icon"
+                                src="   https://cdn-icons-png.flaticon.com/512/732/732190.png"
+                                alt="css icon" /></span
+                        >css
+                    </li>
+                    <li class="skill">
+                        <span
+                            ><img
+                                class="icon"
+                                src="   https://cdn-icons-png.flaticon.com/512/5968/5968292.png"
+                                alt="js icon" /></span
+                        >js
+                    </li>
+                    <li class="skill">
+                        <span
+                            ><img
+                                class="icon"
+                                src="   https://cdn-icons-png.flaticon.com/512/11518/11518876.png"
+                                alt="git icon" /></span
+                        >git
+                    </li>
+                    <li class="skill"></li>
+                </ul>
+            </section>
+        </main>
+        <style>
+            body {
+                font-family: "Ubuntu", sans-serif;
+                background-image: linear-gradient(to right, #ffd194, #d1913c);
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            main {
+                display: flex;
+                flex-direction: column;
+                gap: 3rem;
+            }
+
+            h1,
+            h2,
+            p {
+                color: #fff;
+            }
+            h1 {
+                font-size: 4rem;
+            }
+
+            section {
+                max-width: 75ch;
+                text-align: center;
+                font-size: clamp(0.85rem, 3vw, 1.15rem);
+            }
+
+            ul {
+                text-align: left;
+                color: white;
+            }
+
+            li {
+                padding: 0;
+            }
+
+            .education__list > * + * {
+                margin-top: 1rem;
+            }
+            ul > * {
+                padding-left: 1rem;
+            }
+            .education__list > *::marker {
+                content: "\01F308";
+            }
+            .education__list {
+                list-style-type: georgian;
+            }
+
+            .skills {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .skills__list {
+                list-style-type: none;
+                padding: 0;
+
+                display: flex;
+                gap: 3vw;
+            }
+
+            img.icon {
+                max-width: 20px;
+                vertical-align: bottom;
+                margin-right: 1rem;
+            }
+        </style>
+    </body>
+</html>
