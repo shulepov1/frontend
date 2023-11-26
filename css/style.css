@@ -1,0 +1,83 @@
+.nav-link.active {
+    border: 1px solid red !important;
+}
+
+.custom-fit-content {
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+.custom-bg-dark-green {
+    background-color: rgb(19, 78, 74);
+}
+
+.color-cyan {
+    color: cyan;
+    font-size: 0.9375rem;
+}
+
+p {
+    max-width: 60ch;
+}
+
+#about .col > * {
+    min-width: 480px;
+}
+
+#works {
+    padding-inline: 10vw;
+}
+
+#faq > *,
+#contact > * {
+    max-width: 600px;
+}
+
+#about,
+#works,
+#map,
+#faq,
+#contact {
+    scroll-margin-block: 6rem;
+}
+
+.carousel-indicators {
+    position: static !important;
+}
+
+.mt5rem {
+    margin-top: 5rem !important;
+}
+.mt10rem {
+    margin-top: 10rem !important;
+}
+
+.accordion-button,
+.accordion-body {
+    /* background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important; */
+    /* color: white !important; */
+}
+
+@media (min-width: 1200px) {
+    .custom-sticky {
+        position: sticky;
+        top: 0;
+        z-index: 1020;
+        height: 100vh;
+    }
+}
+
+/* For screens smaller than 768px, use static positioning */
+@media (max-width: 1200px) {
+    #about > div {
+        flex-direction: column;
+        align-items: center;
+    }
+    #about > div > .col-5 {
+        width: 90%;
+    }
+    .custom-sticky {
+        position: static;
+        height: auto;
+    }
+}
