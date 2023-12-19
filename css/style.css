@@ -52,10 +52,15 @@ p {
     margin-top: 10rem !important;
 }
 
-.accordion-button,
-.accordion-body {
-    /* background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important; */
-    /* color: white !important; */
+.buttons {
+    display: flex;
+    gap: 0.5rem;
+}
+.card-body > .buttons > button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px 7px 7px 7px;
 }
 
 @media (min-width: 1200px) {
