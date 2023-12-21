@@ -56,11 +56,34 @@ p {
     display: flex;
     gap: 0.5rem;
 }
-.card-body > .buttons > button {
+
+.card {
+    padding: 0 !important;
+}
+
+.card-img-top {
+    aspect-ratio: 4/3;
+}
+
+.card-body > .buttons > button,
+.card-body > .buttons > a {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 7px 7px 7px 7px;
+}
+
+div.accordion {
+    --bs-accordion-bg: rgb(33,37,41);
+    --bs-accordion-active-bg: rgb(49, 128, 122);
+    --bs-accordion-color: rgb(211, 211, 211);
+    --bs-accordion-btn-color: white;
+    --bs-accordion-active-color: white;
+
+}
+
+button.accordion-button::after {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
 }
 
 @media (min-width: 1200px) {
